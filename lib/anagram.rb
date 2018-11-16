@@ -7,7 +7,7 @@ class Anagram
   
   def self.match(words)
     words.each do |element|
-      element == @word 
+      element.scan(/[#{@word]/) == @word 
     end 
   end
 end
