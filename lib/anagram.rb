@@ -6,8 +6,8 @@ class Anagram
   end
   
   def self.match(words)
-    words.each do |element|
-      element.scan(/[#{@word]/)
+    words.selct do |element|
+      element.split("").sort == @word.sort 
     end 
   end
 end
