@@ -5,4 +5,9 @@ class Anagram
     @word = word
   end
   
+  def self.match(words)
+    
+    words.each do |element|
+      element == @word 
+  end
 end
